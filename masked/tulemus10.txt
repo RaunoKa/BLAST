@@ -1,0 +1,927 @@
+BLASTN 2.3.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+Reference for database indexing: Aleksandr Morgulis, George
+Coulouris, Yan Raytselis, Thomas L. Madden, Richa Agarwala,
+Alejandro A. Schaffer (2008), "Database Indexing for Production
+MegaBLAST Searches", Bioinformatics 24:1757-1764.
+
+
+
+Database: ./db/ab.fasta
+           43,293 sequences; 23,649,116 total letters
+
+
+
+Query= gi|985481729|dbj|LC121817.1| Physalacriaceae sp. No.127 genes for
+18S rRNA, ITS1, 5.8S rRNA, ITS2, 28S rRNA, partial and complete
+sequence
+
+Length=1385
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  Naiadolina_flavomerulina|KJ438381|SH482074.07FU|reps_singleton|...  1048    0.0   
+  Laetisaria_fuciformis|EU118639|SH002042.07FU|reps_singleton|k__...  662     0.0   
+  Basidiomycota_sp|HE820824|SH461291.07FU|reps_singleton|k__Fungi...  453     1e-126
+  Cryptococcus_laurentii|KC920643|SH020118.07FU|reps_singleton|k_...  432     2e-120
+  Fungi_sp|KC965945|SH481766.07FU|reps_singleton|k__Fungi;p__unid...  356     1e-97 
+  Russulaceae_sp|AB629048|SH007346.07FU|reps_singleton|k__Fungi;p...  317     8e-86 
+  Cercozoa_sp|EU490018|SH457238.07FU|reps_singleton|k__Protista;p...  308     3e-83 
+  Fungi_sp|EU516926|SH471602.07FU|reps_singleton|k__Fungi;p__unid...  305     3e-82 
+  Lignincola_laevis|AY225491|SH004685.07FU|reps_singleton|k__Fung...  248     4e-65 
+  Fungi_sp|EU517025|SH463510.07FU|reps_singleton|k__Fungi;p__unid...  243     1e-63 
+  Leveillula_elaeagni|AB042642|SH188808.07FU|refs|k__Fungi;p__Asc...  224     7e-58 
+  Fungi_sp|FJ237084|SH023717.07FU|reps_singleton|k__Fungi;p__unid...  123     2e-27 
+  Pleosporales_sp|JX981477|SH199058.07FU|reps|k__Fungi;p__Ascomyc...  78.8    6e-14 
+  Fungi_sp|EU516876|SH019883.07FU|reps_singleton|k__Fungi;p__unid...  77.1    2e-13 
+  Candida_sp|JX406287|SH457679.07FU|reps_singleton|k__Fungi;p__As...  66.8    2e-10 
+
+
+> Naiadolina_flavomerulina|KJ438381|SH482074.07FU|reps_singleton|k__Fungi;p__Basidiomycota;c__Agaricomycetes;o__Agaricales;f__Physalacriaceae;g__Naiadolina;s__Naiadolina_flavomerulina
+Length=723
+
+ Score = 1048 bits (610),  Expect = 0.0
+ Identities = 686/724 (95%), Gaps = 12/724 (2%)
+ Strand=Plus/Plus
+
+Query  1    CATTATTGAACTTTGAATACTTGTGACTTTGAAGCTGTTGCTGACTCCCTAcaa-ggagt  59
+            ||||||||||||||||||||||||||||||||||||||||||||||||| | |  || ||
+Sbjct  1    CATTATTGAACTTTGAATACTTGTGACTTTGAAGCTGTTGCTGACTCCCAAAAGGGGGGT  60
+
+Query  60   atgtgcacgttttGAGGTTGCAGTTTTCtttgtccacctgtgcaccaattgtagacttgg  119
+            ||||||||| |||||||||||||| |||||||||||||||||||||||||||||||||||
+Sbjct  61   ATGTGCACGCTTTGAGGTTGCAGTCTTCTTTGTCCACCTGTGCACCAATTGTAGACTTGG  120
+
+Query  120  atatcTCTCGTGCCTTCACT----GGGGCGGATGGGAAGGTTGCATCTTAACTGGTGCTT  175
+            ||||||||||||||||||||    |||||||||||||||| |||||||||||||||||||
+Sbjct  121  ATATCTCTCGTGCCTTCACTTGGGGGGGCGGATGGGAAGGCTGCATCTTAACTGGTGCTT  180
+
+Query  176  CTTTCTAATTTCCAAGTTTATGTAtttacacaaactcttgtatgttAAGAATGTCTGATT  235
+            | |||| ||||||||||||||||||||||||||||||||||||||||||||| |||||||
+Sbjct  181  CCTTCTCATTTCCAAGTTTATGTATTTACACAAACTCTTGTATGTTAAGAATCTCTGATT  240
+
+Query  236  TTTGGACCTAGTGTCCTTTAaaactaaatacaactttcaacaacggatctcttggctctc  295
+            ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
+Sbjct  241  TTTGGACCTAGTGTCCTTTAAAACTAAATACAACTTTCAACAACGGATCTCTTGGCTCTT  300
+
+Query  296  gcatcgatgaagaacgcagcgaaatgcgataactaatgtgaattgcagaattcagtgaat  355
+            ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  301  GCATCGATGAAGAACGCAGCGAAATGCGATAACTAATGTGAATTGCAGAATTCAGTGAAT  360
+
+Query  356  catcgagtctttgaacgcaccttgcgccctttggtattccgaagggcatgcctgtttgag  415
+            ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  361  CATCGAGTCTTTGAACGCACCTTGCGCCCTTTGGTATTCCGAAGGGCATGCCTGTTTGAG  420
+
+Query  416  tgtcagttaattctcaacctccctCACTTTTTTTT----GGTGAGTGGT-Ggattggatt  470
+            |||||||||||||||||||||||| ||||||||||    ||| |||||| ||||||||||
+Sbjct  421  TGTCAGTTAATTCTCAACCTCCCTTACTTTTTTTTTTTTGGTAAGTGGTAGGATTGGATT  480
+
+Query  471  gtgggggcttgctggatCTCTTCAGattcagctcctctaaaatgtattagcggaaacCAT  530
+            |||| |||||||||||||| ||||| ||||||||||||||||||||||||||||||||||
+Sbjct  481  GTGGAGGCTTGCTGGATCTTTTCAGGTTCAGCTCCTCTAAAATGTATTAGCGGAAACCAT  540
+
+Query  531  TGCTCGGCTCGCTAaagctgtgataatatctaggCTTGGCTTGTCAGTTAAGATAGATGG  590
+            |||| ||||||||||||||||||||||||||||||||||||||||||||||||  ||| |
+Sbjct  541  TGCTTGGCTCGCTAAAGCTGTGATAATATCTAGGCTTGGCTTGTCAGTTAAGAAGGAT-G  599
+
+Query  591  ATTGCATTTGAAGGGTTTGCACTAA-GTGCTCTCTTTGCCTTCTCTCTTAGGAGAGATAC  649
+            |||||||||||||||| ||| || | ||||||||||||| |||||||||  |||||||||
+Sbjct  600  ATTGCATTTGAAGGGTCTGCGCTTAGGTGCTCTCTTTGCTTTCTCTCTTTAGAGAGATAC  659
+
+Query  650  CTATGTGGTTATCTTGAAAGGatttcagcttctaacagtctgcTTGCAGACAATAACTTG  709
+            ||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||||
+Sbjct  660  CTATGTGGTTATCTTGAAAGGATTTCAGCTTCTAACAGTCTGCTTTCAGACAATAACTTG  719
+
+Query  710  acta  713
+            ||||
+Sbjct  720  ACTA  723
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.19    0.340    0.660 
+
+Effective search space used: 30203722682
+
+
+Query= gi|985481033|dbj|LC095213.1| Cenococcum sp. BA4b007 genes for ITS1,
+5.8S rRNA and ITS2, partial and complete sequence, strain: BA4b007
+
+Length=1141
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  Cenococcum_sp|EF619647|SH214466.07FU|reps|k__Fungi;p__Ascomycot...  774     0.0   
+  Cenococcum_geophilum|KC967372|SH199615.07FU|reps|k__Fungi;p__As...  652     0.0   
+  Dothideomycetes_sp|EU677766|SH199618.07FU|reps|k__Fungi;p__Asco...  650     0.0   
+  Cenococcum_geophilum|AB636435|SH199617.07FU|reps|k__Fungi;p__As...  650     0.0   
+  Cenococcum_geophilum|FJ440882|SH214459.07FU|reps|k__Fungi;p__As...  640     0.0   
+  Cenococcum_geophilum|AY394919|SH199612.07FU|reps|k__Fungi;p__As...  640     0.0   
+  Cenococcum_geophilum|FN610860|SH199613.07FU|reps|k__Fungi;p__As...  636     0.0   
+  Cenococcum_sp|JN969410|SH199619.07FU|reps|k__Fungi;p__Ascomycot...  635     0.0   
+  Cenococcum_sp|KF617801|SH214463.07FU|reps|k__Fungi;p__Ascomycot...  635     0.0   
+  Cenococcum_sp|JQ347036|SH199614.07FU|reps|k__Fungi;p__Ascomycot...  633     0.0   
+  Cenococcum_sp|JN969414|SH199621.07FU|reps|k__Fungi;p__Ascomycot...  626     6e-179
+  Cenococcum_sp|AB839377|SH214461.07FU|reps|k__Fungi;p__Ascomycot...  623     7e-178
+  Cenococcum_sp|GQ240927|SH214465.07FU|reps|k__Fungi;p__Ascomycot...  617     2e-176
+  Cenococcum_geophilum|AY818608|SH199616.07FU|reps|k__Fungi;p__As...  617     2e-176
+  Gloniaceae_sp|JN969413|SH199620.07FU|reps|k__Fungi;p__Ascomycot...  616     8e-176
+  Cenococcum_sp|FN393167|SH214467.07FU|reps|k__Fungi;p__Ascomycot...  616     8e-176
+  Cenococcum_sp|JQ347018|SH214460.07FU|reps|k__Fungi;p__Ascomycot...  612     9e-175
+  Cenococcum_geophilum|AY818600|SH214464.07FU|reps|k__Fungi;p__As...  611     3e-174
+  Cenococcum_geophilum|AY818587|SH214462.07FU|reps|k__Fungi;p__As...  609     9e-174
+  Cenococcum_sp|GU180255|SH027504.07FU|reps_singleton|k__Fungi;p_...  599     1e-170
+  Cenococcum_geophilum|Z48521|SH016889.07FU|reps_singleton|k__Fun...  573     7e-163
+  Cenococcum_geophilum|Z48533|SH027505.07FU|reps_singleton|k__Fun...  568     2e-161
+  Gloniaceae_sp|JN969412|SH199622.07FU|reps|k__Fungi;p__Ascomycot...  514     3e-145
+  Cenococcum_sp|HG796886|SH027502.07FU|reps_singleton|k__Fungi;p_...  514     3e-145
+  Pleosporales_sp|JX981477|SH199058.07FU|reps|k__Fungi;p__Ascomyc...  341     4e-93 
+  Fungi_sp|EU516876|SH019883.07FU|reps_singleton|k__Fungi;p__unid...  276     2e-73 
+  Talaromyces_funiculosus|JN942854|SH460899.07FU|reps_singleton|k...  171     6e-42 
+  Lignincola_laevis|AY225491|SH004685.07FU|reps_singleton|k__Fung...  58.2    7e-08 
+  Candida_sp|JX406287|SH457679.07FU|reps_singleton|k__Fungi;p__As...  56.5    2e-07 
+
+
+> Cenococcum_sp|EF619647|SH214466.07FU|reps|k__Fungi;p__Ascomycota;c__Dothideomycetes;o__Hysteriales;f__Gloniaceae;g__Cenococcum;s__Cenococcum_sp
+Length=453
+
+ Score = 774 bits (450),  Expect = 0.0
+ Identities = 452/453 (99%), Gaps = 0/453 (0%)
+ Strand=Plus/Plus
+
+Query  629   cattatagaaaAGCAAACGCGGGTCAAACCGCGAACTTTTAAACCTTTGAGAATCGACct  688
+             |||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||
+Sbjct  1     CATTATAGAAAAGCAAACGCGGGTCACACCGCGAACTTTTAAACCTTTGAGAATCGACCT  60
+
+Query  689   gcgttgcctcggcgggtccgcccgccggaggacaaACTCAAAACTCCTGTTTTAACGGTG  748
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  61    GCGTTGCCTCGGCGGGTCCGCCCGCCGGAGGACAAACTCAAAACTCCTGTTTTAACGGTG  120
+
+Query  749   TTGTCTGAGCTACAAGcaacgaatcaaaactttcaacaacggatctcttggttctggcat  808
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  121   TTGTCTGAGCTACAAGCAACGAATCAAAACTTTCAACAACGGATCTCTTGGTTCTGGCAT  180
+
+Query  809   cgatgaagaacgcagcgaaatgcgataagtagtgtgaattgcagaattcagtgaatcatc  868
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  181   CGATGAAGAACGCAGCGAAATGCGATAAGTAGTGTGAATTGCAGAATTCAGTGAATCATC  240
+
+Query  869   gaatctttgaacgcacattgcgccccttggtatcccgaggggcatgcctgttcgagcgtc  928
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  241   GAATCTTTGAACGCACATTGCGCCCCTTGGTATCCCGAGGGGCATGCCTGTTCGAGCGTC  300
+
+Query  929   atttcaccactcaagcacggcttggtgttgggcgacgtccCCTCCTCGGGGACGCGCCTC  988
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  301   ATTTCACCACTCAAGCACGGCTTGGTGTTGGGCGACGTCCCCTCCTCGGGGACGCGCCTC  360
+
+Query  989   GAAACGCTCGGCGGCGTGGCACCGGCTTTAAGCGTAGCAGAATctttcgctttggaagtc  1048
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  361   GAAACGCTCGGCGGCGTGGCACCGGCTTTAAGCGTAGCAGAATCTTTCGCTTTGGAAGTC  420
+
+Query  1049  gGGGCCCCGTCTGCCGGAAGACCTACcttcaag  1081
+             |||||||||||||||||||||||||||||||||
+Sbjct  421   GGGGCCCCGTCTGCCGGAAGACCTACCTTCAAG  453
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.19    0.340    0.660 
+
+Effective search space used: 24760806630
+
+
+Query= gi|985481032|dbj|LC095212.1| Cenococcum sp. CAC093 genes for ITS1,
+5.8S rRNA and ITS2, partial and complete sequence, strain: CAC093
+
+Length=1169
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  Cenococcum_sp|EF619647|SH214466.07FU|reps|k__Fungi;p__Ascomycot...  774     0.0   
+  Cenococcum_geophilum|KC967372|SH199615.07FU|reps|k__Fungi;p__As...  652     0.0   
+  Dothideomycetes_sp|EU677766|SH199618.07FU|reps|k__Fungi;p__Asco...  650     0.0   
+  Cenococcum_geophilum|AB636435|SH199617.07FU|reps|k__Fungi;p__As...  650     0.0   
+  Cenococcum_geophilum|FJ440882|SH214459.07FU|reps|k__Fungi;p__As...  640     0.0   
+  Cenococcum_geophilum|AY394919|SH199612.07FU|reps|k__Fungi;p__As...  640     0.0   
+  Cenococcum_geophilum|FN610860|SH199613.07FU|reps|k__Fungi;p__As...  636     0.0   
+  Cenococcum_sp|JN969410|SH199619.07FU|reps|k__Fungi;p__Ascomycot...  635     0.0   
+  Cenococcum_sp|KF617801|SH214463.07FU|reps|k__Fungi;p__Ascomycot...  635     0.0   
+  Cenococcum_sp|JQ347036|SH199614.07FU|reps|k__Fungi;p__Ascomycot...  633     0.0   
+  Cenococcum_sp|JN969414|SH199621.07FU|reps|k__Fungi;p__Ascomycot...  626     7e-179
+  Cenococcum_sp|AB839377|SH214461.07FU|reps|k__Fungi;p__Ascomycot...  623     7e-178
+  Cenococcum_sp|GQ240927|SH214465.07FU|reps|k__Fungi;p__Ascomycot...  617     3e-176
+  Cenococcum_geophilum|AY818608|SH199616.07FU|reps|k__Fungi;p__As...  617     3e-176
+  Gloniaceae_sp|JN969413|SH199620.07FU|reps|k__Fungi;p__Ascomycot...  616     8e-176
+  Cenococcum_sp|FN393167|SH214467.07FU|reps|k__Fungi;p__Ascomycot...  616     8e-176
+  Cenococcum_sp|JQ347018|SH214460.07FU|reps|k__Fungi;p__Ascomycot...  612     9e-175
+  Cenococcum_geophilum|AY818600|SH214464.07FU|reps|k__Fungi;p__As...  611     3e-174
+  Cenococcum_geophilum|AY818587|SH214462.07FU|reps|k__Fungi;p__As...  609     1e-173
+  Cenococcum_sp|GU180255|SH027504.07FU|reps_singleton|k__Fungi;p_...  599     1e-170
+  Cenococcum_geophilum|Z48521|SH016889.07FU|reps_singleton|k__Fun...  573     7e-163
+  Cenococcum_geophilum|Z48533|SH027505.07FU|reps_singleton|k__Fun...  568     2e-161
+  Gloniaceae_sp|JN969412|SH199622.07FU|reps|k__Fungi;p__Ascomycot...  514     3e-145
+  Cenococcum_sp|HG796886|SH027502.07FU|reps_singleton|k__Fungi;p_...  514     3e-145
+  Pleosporales_sp|JX981477|SH199058.07FU|reps|k__Fungi;p__Ascomyc...  341     4e-93 
+  Fungi_sp|EU516876|SH019883.07FU|reps_singleton|k__Fungi;p__unid...  276     2e-73 
+  Talaromyces_funiculosus|JN942854|SH460899.07FU|reps_singleton|k...  176     2e-43 
+  Fungi_sp|KF359676|SH484342.07FU|reps_singleton|k__Fungi;p__unid...  73.7    2e-12 
+  Ascomycota_sp|FN562038|SH477426.07FU|reps_singleton|k__Fungi;p_...  70.2    2e-11 
+  Fungi_sp|KF800384|SH461298.07FU|reps_singleton|k__Fungi;p__unid...  63.4    2e-09 
+
+
+> Cenococcum_sp|EF619647|SH214466.07FU|reps|k__Fungi;p__Ascomycota;c__Dothideomycetes;o__Hysteriales;f__Gloniaceae;g__Cenococcum;s__Cenococcum_sp
+Length=453
+
+ Score = 774 bits (450),  Expect = 0.0
+ Identities = 452/453 (99%), Gaps = 0/453 (0%)
+ Strand=Plus/Plus
+
+Query  657   cattatagaaaAGCAAACGCGGGTCAAACCGCGAACTTTTAAACCTTTGAGAATCGACct  716
+             |||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||
+Sbjct  1     CATTATAGAAAAGCAAACGCGGGTCACACCGCGAACTTTTAAACCTTTGAGAATCGACCT  60
+
+Query  717   gcgttgcctcggcgggtccgcccgccggaggacaaACTCAAAACTCCTGTTTTAACGGTG  776
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  61    GCGTTGCCTCGGCGGGTCCGCCCGCCGGAGGACAAACTCAAAACTCCTGTTTTAACGGTG  120
+
+Query  777   TTGTCTGAGCTACAAGcaacgaatcaaaactttcaacaacggatctcttggttctggcat  836
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  121   TTGTCTGAGCTACAAGCAACGAATCAAAACTTTCAACAACGGATCTCTTGGTTCTGGCAT  180
+
+Query  837   cgatgaagaacgcagcgaaatgcgataagtagtgtgaattgcagaattcagtgaatcatc  896
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  181   CGATGAAGAACGCAGCGAAATGCGATAAGTAGTGTGAATTGCAGAATTCAGTGAATCATC  240
+
+Query  897   gaatctttgaacgcacattgcgccccttggtatcccgaggggcatgcctgttcgagcgtc  956
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  241   GAATCTTTGAACGCACATTGCGCCCCTTGGTATCCCGAGGGGCATGCCTGTTCGAGCGTC  300
+
+Query  957   atttcaccactcaagcacggcttggtgttgggcgacgtccCCTCCTCGGGGACGCGCCTC  1016
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  301   ATTTCACCACTCAAGCACGGCTTGGTGTTGGGCGACGTCCCCTCCTCGGGGACGCGCCTC  360
+
+Query  1017  GAAACGCTCGGCGGCGTGGCACCGGCTTTAAGCGTAGCAGAATctttcgctttggaagtc  1076
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  361   GAAACGCTCGGCGGCGTGGCACCGGCTTTAAGCGTAGCAGAATCTTTCGCTTTGGAAGTC  420
+
+Query  1077  gGGGCCCCGTCTGCCGGAAGACCTACcttcaag  1109
+             |||||||||||||||||||||||||||||||||
+Sbjct  421   GGGGCCCCGTCTGCCGGAAGACCTACCTTCAAG  453
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.19    0.340    0.660 
+
+Effective search space used: 25385403554
+
+
+Query= gi|985481031|dbj|LC095211.1| Cenococcum sp. CAC094 genes for ITS1,
+5.8S rRNA and ITS2, partial and complete sequence, strain: CAC094
+
+Length=1134
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  Cenococcum_sp|EF619647|SH214466.07FU|reps|k__Fungi;p__Ascomycot...  774     0.0   
+  Cenococcum_geophilum|KC967372|SH199615.07FU|reps|k__Fungi;p__As...  652     0.0   
+  Dothideomycetes_sp|EU677766|SH199618.07FU|reps|k__Fungi;p__Asco...  650     0.0   
+  Cenococcum_geophilum|AB636435|SH199617.07FU|reps|k__Fungi;p__As...  650     0.0   
+  Cenococcum_geophilum|FJ440882|SH214459.07FU|reps|k__Fungi;p__As...  640     0.0   
+  Cenococcum_geophilum|AY394919|SH199612.07FU|reps|k__Fungi;p__As...  640     0.0   
+  Cenococcum_geophilum|FN610860|SH199613.07FU|reps|k__Fungi;p__As...  636     0.0   
+  Cenococcum_sp|JN969410|SH199619.07FU|reps|k__Fungi;p__Ascomycot...  635     0.0   
+  Cenococcum_sp|KF617801|SH214463.07FU|reps|k__Fungi;p__Ascomycot...  635     0.0   
+  Cenococcum_sp|JQ347036|SH199614.07FU|reps|k__Fungi;p__Ascomycot...  633     0.0   
+  Cenococcum_sp|JN969414|SH199621.07FU|reps|k__Fungi;p__Ascomycot...  626     6e-179
+  Cenococcum_sp|AB839377|SH214461.07FU|reps|k__Fungi;p__Ascomycot...  623     7e-178
+  Cenococcum_sp|GQ240927|SH214465.07FU|reps|k__Fungi;p__Ascomycot...  617     2e-176
+  Cenococcum_geophilum|AY818608|SH199616.07FU|reps|k__Fungi;p__As...  617     2e-176
+  Gloniaceae_sp|JN969413|SH199620.07FU|reps|k__Fungi;p__Ascomycot...  616     8e-176
+  Cenococcum_sp|FN393167|SH214467.07FU|reps|k__Fungi;p__Ascomycot...  616     8e-176
+  Cenococcum_sp|JQ347018|SH214460.07FU|reps|k__Fungi;p__Ascomycot...  612     9e-175
+  Cenococcum_geophilum|AY818600|SH214464.07FU|reps|k__Fungi;p__As...  611     3e-174
+  Cenococcum_geophilum|AY818587|SH214462.07FU|reps|k__Fungi;p__As...  609     9e-174
+  Cenococcum_sp|GU180255|SH027504.07FU|reps_singleton|k__Fungi;p_...  599     1e-170
+  Cenococcum_geophilum|Z48521|SH016889.07FU|reps_singleton|k__Fun...  573     7e-163
+  Cenococcum_geophilum|Z48533|SH027505.07FU|reps_singleton|k__Fun...  568     2e-161
+  Gloniaceae_sp|JN969412|SH199622.07FU|reps|k__Fungi;p__Ascomycot...  514     2e-145
+  Cenococcum_sp|HG796886|SH027502.07FU|reps_singleton|k__Fungi;p_...  514     2e-145
+  Pleosporales_sp|JX981477|SH199058.07FU|reps|k__Fungi;p__Ascomyc...  326     2e-88 
+  Fungi_sp|EU516876|SH019883.07FU|reps_singleton|k__Fungi;p__unid...  255     3e-67 
+  Talaromyces_funiculosus|JN942854|SH460899.07FU|reps_singleton|k...  176     2e-43 
+
+
+> Cenococcum_sp|EF619647|SH214466.07FU|reps|k__Fungi;p__Ascomycota;c__Dothideomycetes;o__Hysteriales;f__Gloniaceae;g__Cenococcum;s__Cenococcum_sp
+Length=453
+
+ Score = 774 bits (450),  Expect = 0.0
+ Identities = 452/453 (99%), Gaps = 0/453 (0%)
+ Strand=Plus/Plus
+
+Query  633   cattatagaaaAGCAAACGCGGGTCAAACCGCGAACTTTTAAACCTTTGAGAATCGACct  692
+             |||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||
+Sbjct  1     CATTATAGAAAAGCAAACGCGGGTCACACCGCGAACTTTTAAACCTTTGAGAATCGACCT  60
+
+Query  693   gcgttgcctcggcgggtccgcccgccggaggacaaACTCAAAACTCCTGTTTTAACGGTG  752
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  61    GCGTTGCCTCGGCGGGTCCGCCCGCCGGAGGACAAACTCAAAACTCCTGTTTTAACGGTG  120
+
+Query  753   TTGTCTGAGCTACAAGcaacgaatcaaaactttcaacaacggatctcttggttctggcat  812
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  121   TTGTCTGAGCTACAAGCAACGAATCAAAACTTTCAACAACGGATCTCTTGGTTCTGGCAT  180
+
+Query  813   cgatgaagaacgcagcgaaatgcgataagtagtgtgaattgcagaattcagtgaatcatc  872
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  181   CGATGAAGAACGCAGCGAAATGCGATAAGTAGTGTGAATTGCAGAATTCAGTGAATCATC  240
+
+Query  873   gaatctttgaacgcacattgcgccccttggtatcccgaggggcatgcctgttcgagcgtc  932
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  241   GAATCTTTGAACGCACATTGCGCCCCTTGGTATCCCGAGGGGCATGCCTGTTCGAGCGTC  300
+
+Query  933   atttcaccactcaagcacggcttggtgttgggcgacgtccCCTCCTCGGGGACGCGCCTC  992
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  301   ATTTCACCACTCAAGCACGGCTTGGTGTTGGGCGACGTCCCCTCCTCGGGGACGCGCCTC  360
+
+Query  993   GAAACGCTCGGCGGCGTGGCACCGGCTTTAAGCGTAGCAGAATctttcgctttggaagtc  1052
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  361   GAAACGCTCGGCGGCGTGGCACCGGCTTTAAGCGTAGCAGAATCTTTCGCTTTGGAAGTC  420
+
+Query  1053  gGGGCCCCGTCTGCCGGAAGACCTACcttcaag  1085
+             |||||||||||||||||||||||||||||||||
+Sbjct  421   GGGGCCCCGTCTGCCGGAAGACCTACCTTCAAG  453
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.19    0.340    0.660 
+
+Effective search space used: 24604657399
+
+
+Query= gi|985481030|dbj|LC095210.1| Cenococcum sp. CAC015 genes for ITS1,
+5.8S rRNA and ITS2, partial and complete sequence, strain: CAC015
+
+Length=1147
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  Cenococcum_sp|EF619647|SH214466.07FU|reps|k__Fungi;p__Ascomycot...  774     0.0   
+  Cenococcum_geophilum|KC967372|SH199615.07FU|reps|k__Fungi;p__As...  652     0.0   
+  Dothideomycetes_sp|EU677766|SH199618.07FU|reps|k__Fungi;p__Asco...  650     0.0   
+  Cenococcum_geophilum|AB636435|SH199617.07FU|reps|k__Fungi;p__As...  650     0.0   
+  Cenococcum_geophilum|FJ440882|SH214459.07FU|reps|k__Fungi;p__As...  640     0.0   
+  Cenococcum_geophilum|AY394919|SH199612.07FU|reps|k__Fungi;p__As...  640     0.0   
+  Cenococcum_geophilum|FN610860|SH199613.07FU|reps|k__Fungi;p__As...  636     0.0   
+  Cenococcum_sp|JN969410|SH199619.07FU|reps|k__Fungi;p__Ascomycot...  635     0.0   
+  Cenococcum_sp|KF617801|SH214463.07FU|reps|k__Fungi;p__Ascomycot...  635     0.0   
+  Cenococcum_sp|JQ347036|SH199614.07FU|reps|k__Fungi;p__Ascomycot...  633     0.0   
+  Cenococcum_sp|JN969414|SH199621.07FU|reps|k__Fungi;p__Ascomycot...  626     6e-179
+  Cenococcum_sp|AB839377|SH214461.07FU|reps|k__Fungi;p__Ascomycot...  623     7e-178
+  Cenococcum_sp|GQ240927|SH214465.07FU|reps|k__Fungi;p__Ascomycot...  617     2e-176
+  Cenococcum_geophilum|AY818608|SH199616.07FU|reps|k__Fungi;p__As...  617     2e-176
+  Gloniaceae_sp|JN969413|SH199620.07FU|reps|k__Fungi;p__Ascomycot...  616     8e-176
+  Cenococcum_sp|FN393167|SH214467.07FU|reps|k__Fungi;p__Ascomycot...  616     8e-176
+  Cenococcum_sp|JQ347018|SH214460.07FU|reps|k__Fungi;p__Ascomycot...  612     9e-175
+  Cenococcum_geophilum|AY818600|SH214464.07FU|reps|k__Fungi;p__As...  611     3e-174
+  Cenococcum_geophilum|AY818587|SH214462.07FU|reps|k__Fungi;p__As...  609     9e-174
+  Cenococcum_sp|GU180255|SH027504.07FU|reps_singleton|k__Fungi;p_...  599     1e-170
+  Cenococcum_geophilum|Z48521|SH016889.07FU|reps_singleton|k__Fun...  573     7e-163
+  Cenococcum_geophilum|Z48533|SH027505.07FU|reps_singleton|k__Fun...  568     2e-161
+  Gloniaceae_sp|JN969412|SH199622.07FU|reps|k__Fungi;p__Ascomycot...  514     3e-145
+  Cenococcum_sp|HG796886|SH027502.07FU|reps_singleton|k__Fungi;p_...  514     3e-145
+  Pleosporales_sp|JX981477|SH199058.07FU|reps|k__Fungi;p__Ascomyc...  327     5e-89 
+  Fungi_sp|EU516876|SH019883.07FU|reps_singleton|k__Fungi;p__unid...  257     8e-68 
+  Talaromyces_funiculosus|JN942854|SH460899.07FU|reps_singleton|k...  181     5e-45 
+  Ascomycota_sp|FN562038|SH477426.07FU|reps_singleton|k__Fungi;p_...  63.4    2e-09 
+  Fungi_sp|KF359676|SH484342.07FU|reps_singleton|k__Fungi;p__unid...  63.4    2e-09 
+  Fungi_sp|KF800384|SH461298.07FU|reps_singleton|k__Fungi;p__unid...  54.8    8e-07 
+
+
+> Cenococcum_sp|EF619647|SH214466.07FU|reps|k__Fungi;p__Ascomycota;c__Dothideomycetes;o__Hysteriales;f__Gloniaceae;g__Cenococcum;s__Cenococcum_sp
+Length=453
+
+ Score = 774 bits (450),  Expect = 0.0
+ Identities = 452/453 (99%), Gaps = 0/453 (0%)
+ Strand=Plus/Plus
+
+Query  644   cattatagaaaAGCAAACGCGGGTCAAACCGCGAACTTTTAAACCTTTGAGAATCGACct  703
+             |||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||
+Sbjct  1     CATTATAGAAAAGCAAACGCGGGTCACACCGCGAACTTTTAAACCTTTGAGAATCGACCT  60
+
+Query  704   gcgttgcctcggcgggtccgcccgccggaggacaaACTCAAAACTCCTGTTTTAACGGTG  763
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  61    GCGTTGCCTCGGCGGGTCCGCCCGCCGGAGGACAAACTCAAAACTCCTGTTTTAACGGTG  120
+
+Query  764   TTGTCTGAGCTACAAGcaacgaatcaaaactttcaacaacggatctcttggttctggcat  823
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  121   TTGTCTGAGCTACAAGCAACGAATCAAAACTTTCAACAACGGATCTCTTGGTTCTGGCAT  180
+
+Query  824   cgatgaagaacgcagcgaaatgcgataagtagtgtgaattgcagaattcagtgaatcatc  883
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  181   CGATGAAGAACGCAGCGAAATGCGATAAGTAGTGTGAATTGCAGAATTCAGTGAATCATC  240
+
+Query  884   gaatctttgaacgcacattgcgccccttggtatcccgaggggcatgcctgttcgagcgtc  943
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  241   GAATCTTTGAACGCACATTGCGCCCCTTGGTATCCCGAGGGGCATGCCTGTTCGAGCGTC  300
+
+Query  944   atttcaccactcaagcacggcttggtgttgggcgacgtccCCTCCTCGGGGACGCGCCTC  1003
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  301   ATTTCACCACTCAAGCACGGCTTGGTGTTGGGCGACGTCCCCTCCTCGGGGACGCGCCTC  360
+
+Query  1004  GAAACGCTCGGCGGCGTGGCACCGGCTTTAAGCGTAGCAGAATctttcgctttggaagtc  1063
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  361   GAAACGCTCGGCGGCGTGGCACCGGCTTTAAGCGTAGCAGAATCTTTCGCTTTGGAAGTC  420
+
+Query  1064  gGGGCCCCGTCTGCCGGAAGACCTACcttcaag  1096
+             |||||||||||||||||||||||||||||||||
+Sbjct  421   GGGGCCCCGTCTGCCGGAAGACCTACCTTCAAG  453
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.19    0.340    0.660 
+
+Effective search space used: 24894648828
+
+
+Query= gi|985481029|dbj|LC095209.1| Cenococcum sp. CSR002 genes for ITS1,
+5.8S rRNA and ITS2, partial and complete sequence, strain: CSR002
+
+Length=1147
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  Cenococcum_sp|EF619647|SH214466.07FU|reps|k__Fungi;p__Ascomycot...  774     0.0   
+  Cenococcum_geophilum|KC967372|SH199615.07FU|reps|k__Fungi;p__As...  652     0.0   
+  Dothideomycetes_sp|EU677766|SH199618.07FU|reps|k__Fungi;p__Asco...  650     0.0   
+  Cenococcum_geophilum|AB636435|SH199617.07FU|reps|k__Fungi;p__As...  650     0.0   
+  Cenococcum_geophilum|FJ440882|SH214459.07FU|reps|k__Fungi;p__As...  640     0.0   
+  Cenococcum_geophilum|AY394919|SH199612.07FU|reps|k__Fungi;p__As...  640     0.0   
+  Cenococcum_geophilum|FN610860|SH199613.07FU|reps|k__Fungi;p__As...  636     0.0   
+  Cenococcum_sp|JN969410|SH199619.07FU|reps|k__Fungi;p__Ascomycot...  635     0.0   
+  Cenococcum_sp|KF617801|SH214463.07FU|reps|k__Fungi;p__Ascomycot...  635     0.0   
+  Cenococcum_sp|JQ347036|SH199614.07FU|reps|k__Fungi;p__Ascomycot...  633     0.0   
+  Cenococcum_sp|JN969414|SH199621.07FU|reps|k__Fungi;p__Ascomycot...  626     6e-179
+  Cenococcum_sp|AB839377|SH214461.07FU|reps|k__Fungi;p__Ascomycot...  623     7e-178
+  Cenococcum_sp|GQ240927|SH214465.07FU|reps|k__Fungi;p__Ascomycot...  617     2e-176
+  Cenococcum_geophilum|AY818608|SH199616.07FU|reps|k__Fungi;p__As...  617     2e-176
+  Gloniaceae_sp|JN969413|SH199620.07FU|reps|k__Fungi;p__Ascomycot...  616     8e-176
+  Cenococcum_sp|FN393167|SH214467.07FU|reps|k__Fungi;p__Ascomycot...  616     8e-176
+  Cenococcum_sp|JQ347018|SH214460.07FU|reps|k__Fungi;p__Ascomycot...  612     9e-175
+  Cenococcum_geophilum|AY818600|SH214464.07FU|reps|k__Fungi;p__As...  611     3e-174
+  Cenococcum_geophilum|AY818587|SH214462.07FU|reps|k__Fungi;p__As...  609     9e-174
+  Cenococcum_sp|GU180255|SH027504.07FU|reps_singleton|k__Fungi;p_...  599     1e-170
+  Cenococcum_geophilum|Z48521|SH016889.07FU|reps_singleton|k__Fun...  573     7e-163
+  Cenococcum_geophilum|Z48533|SH027505.07FU|reps_singleton|k__Fun...  568     2e-161
+  Gloniaceae_sp|JN969412|SH199622.07FU|reps|k__Fungi;p__Ascomycot...  514     3e-145
+  Cenococcum_sp|HG796886|SH027502.07FU|reps_singleton|k__Fungi;p_...  514     3e-145
+  Pleosporales_sp|JX981477|SH199058.07FU|reps|k__Fungi;p__Ascomyc...  326     2e-88 
+  Fungi_sp|EU516876|SH019883.07FU|reps_singleton|k__Fungi;p__unid...  255     3e-67 
+  Talaromyces_funiculosus|JN942854|SH460899.07FU|reps_singleton|k...  181     5e-45 
+  Ascomycota_sp|FN562038|SH477426.07FU|reps_singleton|k__Fungi;p_...  63.4    2e-09 
+  Fungi_sp|KF359676|SH484342.07FU|reps_singleton|k__Fungi;p__unid...  63.4    2e-09 
+  Fungi_sp|KF800384|SH461298.07FU|reps_singleton|k__Fungi;p__unid...  54.8    8e-07 
+
+
+> Cenococcum_sp|EF619647|SH214466.07FU|reps|k__Fungi;p__Ascomycota;c__Dothideomycetes;o__Hysteriales;f__Gloniaceae;g__Cenococcum;s__Cenococcum_sp
+Length=453
+
+ Score = 774 bits (450),  Expect = 0.0
+ Identities = 452/453 (99%), Gaps = 0/453 (0%)
+ Strand=Plus/Plus
+
+Query  645   cattatagaaaAGCAAACGCGGGTCAAACCGCGAACTTTTAAACCTTTGAGAATCGACct  704
+             |||||||||||||||||||||||||| |||||||||||||||||||||||||||||||||
+Sbjct  1     CATTATAGAAAAGCAAACGCGGGTCACACCGCGAACTTTTAAACCTTTGAGAATCGACCT  60
+
+Query  705   gcgttgcctcggcgggtccgcccgccggaggacaaACTCAAAACTCCTGTTTTAACGGTG  764
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  61    GCGTTGCCTCGGCGGGTCCGCCCGCCGGAGGACAAACTCAAAACTCCTGTTTTAACGGTG  120
+
+Query  765   TTGTCTGAGCTACAAGcaacgaatcaaaactttcaacaacggatctcttggttctggcat  824
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  121   TTGTCTGAGCTACAAGCAACGAATCAAAACTTTCAACAACGGATCTCTTGGTTCTGGCAT  180
+
+Query  825   cgatgaagaacgcagcgaaatgcgataagtagtgtgaattgcagaattcagtgaatcatc  884
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  181   CGATGAAGAACGCAGCGAAATGCGATAAGTAGTGTGAATTGCAGAATTCAGTGAATCATC  240
+
+Query  885   gaatctttgaacgcacattgcgccccttggtatcccgaggggcatgcctgttcgagcgtc  944
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  241   GAATCTTTGAACGCACATTGCGCCCCTTGGTATCCCGAGGGGCATGCCTGTTCGAGCGTC  300
+
+Query  945   atttcaccactcaagcacggcttggtgttgggcgacgtccCCTCCTCGGGGACGCGCCTC  1004
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  301   ATTTCACCACTCAAGCACGGCTTGGTGTTGGGCGACGTCCCCTCCTCGGGGACGCGCCTC  360
+
+Query  1005  GAAACGCTCGGCGGCGTGGCACCGGCTTTAAGCGTAGCAGAATctttcgctttggaagtc  1064
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  361   GAAACGCTCGGCGGCGTGGCACCGGCTTTAAGCGTAGCAGAATCTTTCGCTTTGGAAGTC  420
+
+Query  1065  gGGGCCCCGTCTGCCGGAAGACCTACcttcaag  1097
+             |||||||||||||||||||||||||||||||||
+Sbjct  421   GGGGCCCCGTCTGCCGGAAGACCTACCTTCAAG  453
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.19    0.340    0.660 
+
+Effective search space used: 24894648828
+
+
+Query= gi|985481028|dbj|LC095208.1| Cenococcum geophilum genes for ITS1,
+5.8S rRNA and ITS2, partial and complete sequence, strain: PeOr003
+
+Length=1093
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  Cenococcum_geophilum|AY818608|SH199616.07FU|reps|k__Fungi;p__As...  712     0.0   
+  Cenococcum_geophilum|AY818587|SH214462.07FU|reps|k__Fungi;p__As...  700     0.0   
+  Cenococcum_geophilum|KC967372|SH199615.07FU|reps|k__Fungi;p__As...  695     0.0   
+  Cenococcum_geophilum|AB636435|SH199617.07FU|reps|k__Fungi;p__As...  693     0.0   
+  Cenococcum_geophilum|FJ440882|SH214459.07FU|reps|k__Fungi;p__As...  686     0.0   
+  Cenococcum_geophilum|AY394919|SH199612.07FU|reps|k__Fungi;p__As...  686     0.0   
+  Cenococcum_geophilum|FN610860|SH199613.07FU|reps|k__Fungi;p__As...  681     0.0   
+  Cenococcum_sp|JQ347036|SH199614.07FU|reps|k__Fungi;p__Ascomycot...  681     0.0   
+  Cenococcum_sp|AB839377|SH214461.07FU|reps|k__Fungi;p__Ascomycot...  676     0.0   
+  Cenococcum_sp|JN969414|SH199621.07FU|reps|k__Fungi;p__Ascomycot...  671     0.0   
+  Cenococcum_sp|JN969410|SH199619.07FU|reps|k__Fungi;p__Ascomycot...  662     0.0   
+  Cenococcum_sp|FN393167|SH214467.07FU|reps|k__Fungi;p__Ascomycot...  660     0.0   
+  Cenococcum_geophilum|AY818600|SH214464.07FU|reps|k__Fungi;p__As...  660     0.0   
+  Cenococcum_sp|GQ240927|SH214465.07FU|reps|k__Fungi;p__Ascomycot...  657     0.0   
+  Cenococcum_sp|JQ347018|SH214460.07FU|reps|k__Fungi;p__Ascomycot...  648     0.0   
+  Cenococcum_sp|KF617801|SH214463.07FU|reps|k__Fungi;p__Ascomycot...  645     0.0   
+  Dothideomycetes_sp|EU677766|SH199618.07FU|reps|k__Fungi;p__Asco...  643     0.0   
+  Gloniaceae_sp|JN969413|SH199620.07FU|reps|k__Fungi;p__Ascomycot...  636     0.0   
+  Cenococcum_geophilum|Z48533|SH027505.07FU|reps_singleton|k__Fun...  612     8e-175
+  Cenococcum_sp|EF619647|SH214466.07FU|reps|k__Fungi;p__Ascomycot...  599     1e-170
+  Cenococcum_sp|GU180255|SH027504.07FU|reps_singleton|k__Fungi;p_...  595     1e-169
+  Gloniaceae_sp|JN969412|SH199622.07FU|reps|k__Fungi;p__Ascomycot...  538     1e-152
+  Pleosporales_sp|JX981477|SH199058.07FU|reps|k__Fungi;p__Ascomyc...  319     2e-86 
+  Fungi_sp|EU516876|SH019883.07FU|reps_singleton|k__Fungi;p__unid...  241     4e-63 
+  Talaromyces_funiculosus|JN942854|SH460899.07FU|reps_singleton|k...  176     2e-43 
+  Ascomycota_sp|FN562038|SH477426.07FU|reps_singleton|k__Fungi;p_...  51.3    8e-06 
+  Fungi_sp|KF359676|SH484342.07FU|reps_singleton|k__Fungi;p__unid...  51.3    8e-06 
+
+
+> Cenococcum_geophilum|AY818608|SH199616.07FU|reps|k__Fungi;p__Ascomycota;c__Dothideomycetes;o__Hysteriales;f__Gloniaceae;g__Cenococcum;s__Cenococcum_geophilum
+Length=444
+
+ Score = 712 bits (414),  Expect = 0.0
+ Identities = 434/444 (98%), Gaps = 1/444 (0%)
+ Strand=Plus/Plus
+
+Query  599   cagaaagTAAACGCGGGTCAAACCGTGAACTTTTAAACCTTTGACGATTGActcat-gtt  657
+             ||||||||||||||||||||||||| |||||||||||||||||||||||||||||| |||
+Sbjct  1     CAGAAAGTAAACGCGGGTCAAACCGCGAACTTTTAAACCTTTGACGATTGACTCATGGTT  60
+
+Query  658   gcctcggcgggctcgcccgccagaggatacATTAAAACTCCTGTTTTAACGGCGTTGTCT  717
+             |||||||||||||||||||||||||||||||| ||||||||||||||||||| |||||||
+Sbjct  61    GCCTCGGCGGGCTCGCCCGCCAGAGGATACATCAAAACTCCTGTTTTAACGGTGTTGTCT  120
+
+Query  718   GAGCTATAAGcaacgaatcaaaactttcaacaacggatctcttggttctggcatcgatga  777
+             |||||| |||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  121   GAGCTACAAGCAACGAATCAAAACTTTCAACAACGGATCTCTTGGTTCTGGCATCGATGA  180
+
+Query  778   agaacgcagcgaaatgcgataagtagtgtgaattgcagaattcagtgaatcatcgaatct  837
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  181   AGAACGCAGCGAAATGCGATAAGTAGTGTGAATTGCAGAATTCAGTGAATCATCGAATCT  240
+
+Query  838   ttgaacgcacattgcgccccttggtatcccgaggggcatgcctgttcgagcgtcattaca  897
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  241   TTGAACGCACATTGCGCCCCTTGGTATCCCGAGGGGCATGCCTGTTCGAGCGTCATTACA  300
+
+Query  898   ccactcaagcctagcttggtgttgggcgacgtccCCTTTGGGGACGCGCCTTGAAATGCT  957
+             |||||||||||| ||||||||||||||||||||||| ||| ||||||||| |||||||||
+Sbjct  301   CCACTCAAGCCTGGCTTGGTGTTGGGCGACGTCCCCATTGCGGACGCGCCCTGAAATGCT  360
+
+Query  958   CGGCGGCGTGGCACCGGCTTTAAGCGTAGCAGAATCTTTCGCTTCGAAAGTCGGGGCCCC  1017
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  361   CGGCGGCGTGGCACCGGCTTTAAGCGTAGCAGAATCTTTCGCTTCGAAAGTCGGGGCCCC  420
+
+Query  1018  GCCTGCCGGAAGACCTACtcacaa  1041
+             |||||||||||||||||| |||||
+Sbjct  421   GCCTGCCGGAAGACCTACCCACAA  444
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.19    0.340    0.660 
+
+Effective search space used: 23690069046
+
+
+Query= gi|985481027|dbj|LC095207.1| Cenococcum geophilum genes for ITS1,
+5.8S rRNA and ITS2, partial and complete sequence, strain: CM039
+
+Length=1108
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  Cenococcum_geophilum|AY818600|SH214464.07FU|reps|k__Fungi;p__As...  763     0.0   
+  Cenococcum_sp|AB839377|SH214461.07FU|reps|k__Fungi;p__Ascomycot...  724     0.0   
+  Cenococcum_geophilum|FJ440882|SH214459.07FU|reps|k__Fungi;p__As...  719     0.0   
+  Cenococcum_geophilum|AB636435|SH199617.07FU|reps|k__Fungi;p__As...  710     0.0   
+  Cenococcum_geophilum|AY394919|SH199612.07FU|reps|k__Fungi;p__As...  708     0.0   
+  Cenococcum_geophilum|KC967372|SH199615.07FU|reps|k__Fungi;p__As...  702     0.0   
+  Cenococcum_sp|JN969414|SH199621.07FU|reps|k__Fungi;p__Ascomycot...  693     0.0   
+  Cenococcum_sp|GQ240927|SH214465.07FU|reps|k__Fungi;p__Ascomycot...  684     0.0   
+  Cenococcum_geophilum|FN610860|SH199613.07FU|reps|k__Fungi;p__As...  683     0.0   
+  Cenococcum_sp|JQ347036|SH199614.07FU|reps|k__Fungi;p__Ascomycot...  683     0.0   
+  Cenococcum_geophilum|AY818608|SH199616.07FU|reps|k__Fungi;p__As...  672     0.0   
+  Cenococcum_sp|JQ347018|SH214460.07FU|reps|k__Fungi;p__Ascomycot...  665     0.0   
+  Cenococcum_sp|JN969410|SH199619.07FU|reps|k__Fungi;p__Ascomycot...  662     0.0   
+  Cenococcum_sp|FN393167|SH214467.07FU|reps|k__Fungi;p__Ascomycot...  662     0.0   
+  Cenococcum_geophilum|AY818587|SH214462.07FU|reps|k__Fungi;p__As...  660     0.0   
+  Cenococcum_geophilum|Z48521|SH016889.07FU|reps_singleton|k__Fun...  643     0.0   
+  Gloniaceae_sp|JN969413|SH199620.07FU|reps|k__Fungi;p__Ascomycot...  641     0.0   
+  Dothideomycetes_sp|EU677766|SH199618.07FU|reps|k__Fungi;p__Asco...  638     0.0   
+  Cenococcum_sp|KF617801|SH214463.07FU|reps|k__Fungi;p__Ascomycot...  635     0.0   
+  Cenococcum_geophilum|Z48533|SH027505.07FU|reps_singleton|k__Fun...  629     6e-180
+  Cenococcum_sp|GU997763|SH027503.07FU|reps_singleton|k__Fungi;p_...  621     2e-177
+  Cenococcum_sp|EF619647|SH214466.07FU|reps|k__Fungi;p__Ascomycot...  611     3e-174
+  Cenococcum_sp|GU180255|SH027504.07FU|reps_singleton|k__Fungi;p_...  580     6e-165
+  Gloniaceae_sp|JN969412|SH199622.07FU|reps|k__Fungi;p__Ascomycot...  561     3e-159
+  Pleosporales_sp|JX981477|SH199058.07FU|reps|k__Fungi;p__Ascomyc...  305     3e-82 
+  Fungi_sp|EU516876|SH019883.07FU|reps_singleton|k__Fungi;p__unid...  277     5e-74 
+  Talaromyces_funiculosus|JN942854|SH460899.07FU|reps_singleton|k...  171     6e-42 
+  Ascomycota_sp|FN562038|SH477426.07FU|reps_singleton|k__Fungi;p_...  70.2    2e-11 
+  Fungi_sp|KF359676|SH484342.07FU|reps_singleton|k__Fungi;p__unid...  70.2    2e-11 
+  Fungi_sp|KF800384|SH461298.07FU|reps_singleton|k__Fungi;p__unid...  65.1    6e-10 
+
+
+> Cenococcum_geophilum|AY818600|SH214464.07FU|reps|k__Fungi;p__Ascomycota;c__Dothideomycetes;o__Hysteriales;f__Gloniaceae;g__Cenococcum;s__Cenococcum_geophilum
+Length=444
+
+ Score = 763 bits (444),  Expect = 0.0
+ Identities = 444/444 (100%), Gaps = 0/444 (0%)
+ Strand=Plus/Plus
+
+Query  606   cagaaagTAAACGCGGATCAAACCGCGAACTTTTAAACCTTTGACGATTGActcatgttg  665
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1     CAGAAAGTAAACGCGGATCAAACCGCGAACTTTTAAACCTTTGACGATTGACTCATGTTG  60
+
+Query  666   cctcggcgggttcgcccgccagaggatacATCAAAACTCCTGTTTTAAACGGTGTTGTCT  725
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  61    CCTCGGCGGGTTCGCCCGCCAGAGGATACATCAAAACTCCTGTTTTAAACGGTGTTGTCT  120
+
+Query  726   GAGCTACAAGcaacgaatcaaaactttcaacaacggatctcttggttctggcatcgatga  785
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  121   GAGCTACAAGCAACGAATCAAAACTTTCAACAACGGATCTCTTGGTTCTGGCATCGATGA  180
+
+Query  786   agaacgcagcgaaatgcgataagtagtgtgaattgcagaattcagtgaatcatcgaatct  845
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  181   AGAACGCAGCGAAATGCGATAAGTAGTGTGAATTGCAGAATTCAGTGAATCATCGAATCT  240
+
+Query  846   ttgaacgcacattgcgccccttggtatcccgaggggcatgcctgttcgagcgtcatttca  905
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  241   TTGAACGCACATTGCGCCCCTTGGTATCCCGAGGGGCATGCCTGTTCGAGCGTCATTTCA  300
+
+Query  906   ccactcaagcctggcttggtgttgggtgacgTCCATTTTAAGGACGCGCCTCGAAACGCT  965
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  301   CCACTCAAGCCTGGCTTGGTGTTGGGTGACGTCCATTTTAAGGACGCGCCTCGAAACGCT  360
+
+Query  966   CGGCGGCGTGGCACCGGCTTTAAGCGTAGCAGAATCTTTCGCTTCGAAAGTCGGGGCCCC  1025
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  361   CGGCGGCGTGGCACCGGCTTTAAGCGTAGCAGAATCTTTCGCTTCGAAAGTCGGGGCCCC  420
+
+Query  1026  GTCTGCCGGAAGACCCATTcgcaa  1049
+             ||||||||||||||||||||||||
+Sbjct  421   GTCTGCCGGAAGACCCATTCGCAA  444
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.19    0.340    0.660 
+
+Effective search space used: 24024674541
+
+
+Query= gi|985481026|dbj|LC095206.1| Cenococcum geophilum genes for ITS1,
+5.8S rRNA and ITS2, partial and complete sequence, strain: CM003r
+
+Length=1063
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  Cenococcum_geophilum|AY394919|SH199612.07FU|reps|k__Fungi;p__As...  753     0.0   
+  Cenococcum_geophilum|FJ440882|SH214459.07FU|reps|k__Fungi;p__As...  743     0.0   
+  Cenococcum_geophilum|AB636435|SH199617.07FU|reps|k__Fungi;p__As...  739     0.0   
+  Cenococcum_geophilum|KC967372|SH199615.07FU|reps|k__Fungi;p__As...  720     0.0   
+  Cenococcum_sp|JN969414|SH199621.07FU|reps|k__Fungi;p__Ascomycot...  719     0.0   
+  Cenococcum_sp|JQ347036|SH199614.07FU|reps|k__Fungi;p__Ascomycot...  717     0.0   
+  Cenococcum_sp|AB839377|SH214461.07FU|reps|k__Fungi;p__Ascomycot...  712     0.0   
+  Cenococcum_sp|GQ240927|SH214465.07FU|reps|k__Fungi;p__Ascomycot...  703     0.0   
+  Cenococcum_geophilum|FN610860|SH199613.07FU|reps|k__Fungi;p__As...  696     0.0   
+  Cenococcum_geophilum|AY818600|SH214464.07FU|reps|k__Fungi;p__As...  696     0.0   
+  Cenococcum_sp|JN969410|SH199619.07FU|reps|k__Fungi;p__Ascomycot...  686     0.0   
+  Cenococcum_sp|JQ347018|SH214460.07FU|reps|k__Fungi;p__Ascomycot...  684     0.0   
+  Cenococcum_geophilum|AY818608|SH199616.07FU|reps|k__Fungi;p__As...  676     0.0   
+  Cenococcum_sp|FN393167|SH214467.07FU|reps|k__Fungi;p__Ascomycot...  676     0.0   
+  Cenococcum_geophilum|AY818587|SH214462.07FU|reps|k__Fungi;p__As...  674     0.0   
+  Cenococcum_geophilum|Z48521|SH016889.07FU|reps_singleton|k__Fun...  672     0.0   
+  Gloniaceae_sp|JN969413|SH199620.07FU|reps|k__Fungi;p__Ascomycot...  671     0.0   
+  Dothideomycetes_sp|EU677766|SH199618.07FU|reps|k__Fungi;p__Asco...  669     0.0   
+  Gloniaceae_sp|UDB017416|SH027501.07FU|reps_singleton|k__Fungi;p...  662     0.0   
+  Cenococcum_sp|KF617801|SH214463.07FU|reps|k__Fungi;p__Ascomycot...  655     0.0   
+  Cenococcum_geophilum|Z48533|SH027505.07FU|reps_singleton|k__Fun...  641     0.0   
+  Cenococcum_sp|GU997763|SH027503.07FU|reps_singleton|k__Fungi;p_...  636     0.0   
+  Cenococcum_sp|EF619647|SH214466.07FU|reps|k__Fungi;p__Ascomycot...  635     0.0   
+  Cenococcum_sp|HG796886|SH027502.07FU|reps_singleton|k__Fungi;p_...  619     7e-177
+  Cenococcum_sp|GU180255|SH027504.07FU|reps_singleton|k__Fungi;p_...  605     9e-173
+  Gloniaceae_sp|JN969412|SH199622.07FU|reps|k__Fungi;p__Ascomycot...  569     7e-162
+  Cenococcum_sp|JQ347050|SH016888.07FU|reps_singleton|k__Fungi;p_...  487     4e-137
+  Pleosporales_sp|JX981477|SH199058.07FU|reps|k__Fungi;p__Ascomyc...  314     7e-85 
+  Fungi_sp|EU516876|SH019883.07FU|reps_singleton|k__Fungi;p__unid...  247     1e-64 
+  Talaromyces_funiculosus|JN942854|SH460899.07FU|reps_singleton|k...  156     2e-37 
+
+
+> Cenococcum_geophilum|AY394919|SH199612.07FU|reps|k__Fungi;p__Ascomycota;c__Dothideomycetes;o__Hysteriales;f__Gloniaceae;g__Cenococcum;s__Cenococcum_geophilum
+Length=444
+
+ Score = 753 bits (438),  Expect = 0.0
+ Identities = 442/444 (99%), Gaps = 0/444 (0%)
+ Strand=Plus/Plus
+
+Query  573   cagaaagTAAACGCGGATCAAACCGCGAACTTCTAAACCTTTGACGATTGActcatgttg  632
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1     CAGAAAGTAAACGCGGATCAAACCGCGAACTTCTAAACCTTTGACGATTGACTCATGTTG  60
+
+Query  633   cctcggcgggtgctCCCGCCAGAGGATACATCAAAACTCCTGTTTTAACGGTGTTGTCTG  692
+             ||||||||||| ||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  61    CCTCGGCGGGTTCTCCCGCCAGAGGATACATCAAAACTCCTGTTTTAACGGTGTTGTCTG  120
+
+Query  693   AGCTACAAGcaacgaatcaaaactttcaacaacggatctcttggttctggcatcgatgaa  752
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  121   AGCTACAAGCAACGAATCAAAACTTTCAACAACGGATCTCTTGGTTCTGGCATCGATGAA  180
+
+Query  753   gaacgcagcgaaatgcgataagtagtgtgaattgcagaattcagtgaatcatcgaatctt  812
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  181   GAACGCAGCGAAATGCGATAAGTAGTGTGAATTGCAGAATTCAGTGAATCATCGAATCTT  240
+
+Query  813   tgaacgcacattgcgccccttggtatcccgaggggcatgcctgttcgagcgtcatttcac  872
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  241   TGAACGCACATTGCGCCCCTTGGTATCCCGAGGGGCATGCCTGTTCGAGCGTCATTTCAC  300
+
+Query  873   cactcaagcctggcttggtgttgggcgacgtccCCTTTGGGGACGCGCCTCGAAACGCTC  932
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  301   CACTCAAGCCTGGCTTGGTGTTGGGCGACGTCCCCTTTGGGGACGCGCCTCGAAACGCTC  360
+
+Query  933   GGCGGCGTGGCACCGGCTTTAAGCGTAGCAGAATCTTTCGCTTTGAAAGTCGGAGCCCCG  992
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||| ||||||
+Sbjct  361   GGCGGCGTGGCACCGGCTTTAAGCGTAGCAGAATCTTTCGCTTTGAAAGTCGGGGCCCCG  420
+
+Query  993   TCTGCCGGAAGACCTACTcgcaag  1016
+             ||||||||||||||||||||||||
+Sbjct  421   TCTGCCGGAAGACCTACTCGCAAG  444
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.19    0.340    0.660 
+
+Effective search space used: 23020858056
+
+
+Query= gi|985481025|dbj|LC095205.1| Cenococcum geophilum genes for ITS1,
+5.8S rRNA and ITS2, partial and complete sequence, strain: CC035
+
+Length=1087
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  Cenococcum_geophilum|AB636435|SH199617.07FU|reps|k__Fungi;p__As...  714     0.0   
+  Cenococcum_geophilum|AY818608|SH199616.07FU|reps|k__Fungi;p__As...  712     0.0   
+  Cenococcum_geophilum|KC967372|SH199615.07FU|reps|k__Fungi;p__As...  705     0.0   
+  Cenococcum_geophilum|AY818587|SH214462.07FU|reps|k__Fungi;p__As...  700     0.0   
+  Cenococcum_geophilum|FJ440882|SH214459.07FU|reps|k__Fungi;p__As...  696     0.0   
+  Cenococcum_geophilum|AY394919|SH199612.07FU|reps|k__Fungi;p__As...  696     0.0   
+  Cenococcum_geophilum|FN610860|SH199613.07FU|reps|k__Fungi;p__As...  691     0.0   
+  Cenococcum_sp|JQ347036|SH199614.07FU|reps|k__Fungi;p__Ascomycot...  691     0.0   
+  Cenococcum_sp|AB839377|SH214461.07FU|reps|k__Fungi;p__Ascomycot...  686     0.0   
+  Cenococcum_sp|JN969410|SH199619.07FU|reps|k__Fungi;p__Ascomycot...  683     0.0   
+  Cenococcum_sp|JN969414|SH199621.07FU|reps|k__Fungi;p__Ascomycot...  681     0.0   
+  Cenococcum_sp|GQ240927|SH214465.07FU|reps|k__Fungi;p__Ascomycot...  677     0.0   
+  Cenococcum_sp|FN393167|SH214467.07FU|reps|k__Fungi;p__Ascomycot...  671     0.0   
+  Cenococcum_geophilum|AY818600|SH214464.07FU|reps|k__Fungi;p__As...  671     0.0   
+  Cenococcum_sp|JQ347018|SH214460.07FU|reps|k__Fungi;p__Ascomycot...  659     0.0   
+  Gloniaceae_sp|JN969413|SH199620.07FU|reps|k__Fungi;p__Ascomycot...  647     0.0   
+  Dothideomycetes_sp|EU677766|SH199618.07FU|reps|k__Fungi;p__Asco...  638     0.0   
+  Cenococcum_sp|KF617801|SH214463.07FU|reps|k__Fungi;p__Ascomycot...  635     0.0   
+  Cenococcum_geophilum|Z48521|SH016889.07FU|reps_singleton|k__Fun...  626     6e-179
+  Cenococcum_sp|EF619647|SH214466.07FU|reps|k__Fungi;p__Ascomycot...  623     7e-178
+  Cenococcum_sp|GU180255|SH027504.07FU|reps_singleton|k__Fungi;p_...  585     2e-166
+  Gloniaceae_sp|JN969412|SH199622.07FU|reps|k__Fungi;p__Ascomycot...  564     2e-160
+  Pleosporales_sp|JX981477|SH199058.07FU|reps|k__Fungi;p__Ascomyc...  320     6e-87 
+  Fungi_sp|EU516876|SH019883.07FU|reps_singleton|k__Fungi;p__unid...  247     1e-64 
+  Talaromyces_funiculosus|JN942854|SH460899.07FU|reps_singleton|k...  168     6e-41 
+
+
+> Cenococcum_geophilum|AB636435|SH199617.07FU|reps|k__Fungi;p__Ascomycota;c__Dothideomycetes;o__Hysteriales;f__Gloniaceae;g__Cenococcum;s__Cenococcum_geophilum
+Length=483
+
+ Score = 714 bits (415),  Expect = 0.0
+ Identities = 459/481 (95%), Gaps = 6/481 (1%)
+ Strand=Plus/Plus
+
+Query  581   gcggaaggatcattacagaaagTAAACGCGGGTCAAACCGCGAACTTTTAAACCTTTGAC  640
+             ||||||||||||||||||||||||||||||||||||||||||||||| ||||||||||||
+Sbjct  1     GCGGAAGGATCATTACAGAAAGTAAACGCGGGTCAAACCGCGAACTTCTAAACCTTTGAC  60
+
+Query  641   GATTGACtcgtgttgcctcggcgggctcgcccgccagaggatatATCAAAACTCCTATTT  700
+             ||||||||| ||||||||||| ||| ||||||||| ||||||| |||||||||||| |||
+Sbjct  61    GATTGACTCATGTTGCCTCGGTGGGTTCGCCCGCCGGAGGATACATCAAAACTCCTGTTT  120
+
+Query  701   TAACGGTGTTGTCTGAGCTACAAGcaacgaatcaaaactttcaacaacggatctcttggt  760
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  121   TAACGGTGTTGTCTGAGCTACAAGCAACGAATCAAAACTTTCAACAACGGATCTCTTGGT  180
+
+Query  761   tctggcatcgatgaagaacgcagcgaaatgcgataagtagtgtgaattgcagaattcagt  820
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  181   TCTGGCATCGATGAAGAACGCAGCGAAATGCGATAAGTAGTGTGAATTGCAGAATTCAGT  240
+
+Query  821   gaatcatcgaatctttgaacgcacattgcgccccttggtatcccgaggggcatgcctgtt  880
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  241   GAATCATCGAATCTTTGAACGCACATTGCGCCCCTTGGTATCCCGAGGGGCATGCCTGTT  300
+
+Query  881   cgagcgtcattacaccactcaagcctggcttggtgttgggcgacgtccCCTTTGGGGACG  940
+             ||||||||||| |||| ||||||||||||||||||||||||||||||| |||||||||||
+Sbjct  301   CGAGCGTCATTTCACCCCTCAAGCCTGGCTTGGTGTTGGGCGACGTCCTCTTTGGGGACG  360
+
+Query  941   CGCCTTAAAACGCTCGGCGGCGTGGCACCGGCTTTAAGCGTAGCAGA-----ATCTTTCG  995
+             ||||| |||||||||||||||||||||||||||||||||||||||||     ||||||||
+Sbjct  361   CGCCTCAAAACGCTCGGCGGCGTGGCACCGGCTTTAAGCGTAGCAGAATCTTATCTTTCG  420
+
+Query  996   CTTCGAAAGTCGGGGCCCCGCCTGCCGGAAGACCTACtcacaaggttgacctcggatcag  1055
+             ||| ||||||||||||| |  |||||||||||||||||| ||||| ||||||||||||||
+Sbjct  421   CTTTGAAAGTCGGGGCCACATCTGCCGGAAGACCTACTCGCAAGG-TGACCTCGGATCAG  479
+
+Query  1056  g  1056
+             |
+Sbjct  480   G  480
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.19    0.340    0.660 
+
+Effective search space used: 23556226848
+
+
+  Database: ./db/ab.fasta
+    Posted date:  May 4, 2016  5:04 PM
+  Number of letters in database: 23,649,116
+  Number of sequences in database:  43,293
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2
